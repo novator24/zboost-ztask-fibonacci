@@ -1,0 +1,5 @@
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(rnd_magna_module_04 main.cpp)
+target_link_libraries(rnd_magna_module_04 m ${BoostThread_LIBRARIES} ${BoostSystem_LIBRARIES})
+add_executable(fibonacci fibonacci.cpp)
+target_link_libraries(fibonacci m ${BoostThread_LIBRARIES} ${BoostSystem_LIBRARIES})
